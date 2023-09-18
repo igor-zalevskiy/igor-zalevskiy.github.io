@@ -16,6 +16,12 @@ p {
     color:black;
 }
 
+img {
+    max-width: 100%;
+    max-height: 100vh;
+    height: auto;
+}
+
 .highlight_name {
     color:orange;
 }
@@ -37,3 +43,4 @@ p {
     background-color: orange; /* Orange background color on hover */
     color: white; /* Set text color to black */
 }
+
