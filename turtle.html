@@ -43,35 +43,31 @@ for _ in range(3):
 screen.exitonclick()</code></pre>
 
     <h2>Команды</h2>
-        <pre class="language-python"><code>my_turtle.forward() # вперёд
-my_turtle.backward() # назад
-my_turtle.left() # влево в градусах
-my_turtle.right() # вправо в градусах
-my_turtle.color() # цвет
-my_turtle.circle() # круг
-my_turtle.speed()
-    	“fastest”: 0
-    	“slowest”: 1
-    	“normal”: 6
-    	“fast”: 10
-my_turtle.clear()
-my_turtle.setposition(x,y) # x, y - координаты
+        <pre class="language-python"><code>my_turtle.forward(100) # идти вперёд 100 шагов
+my_turtle.backward(100) # идти назад 100 шагов
+my_turtle.left(90) # повернуть влево на 90 градусов
+my_turtle.right(90) # повернуть вправо на 90 градусов
+my_turtle.color("#ff0000") # черепаха рисует красным
+my_turtle.circle(30) # круг с радиусом 30
+my_turtle.speed(4) # скорость (0 - максимальная)
+my_turtle.pensize(3) # ширина линии, которую оставляет черепаха
+my_turtle.setposition(100, 80) # x, y - координаты; (0, 0) координаты центра
 
-
-# комбинации команд:
+# заливка (комбинация команд)
 my_turtle.begin_fill()
-…
+… # здась рисуем форму, которую будем заполнять
 my_turtle.end_fill()
 
+# наша черепаха не будет рисовать при движении
 my_turtle.penup()
+# наша черепаха будет рисовать при движении
 my_turtle.pendown()
 
-my_turtle.goto(40, 30)
+my_turtle.goto(40, 30) # перейти в координаты x, y
 
-# 18/10/2023
-screen.title("Моя черепаха")
-my_turtle.shape("turtle")
-my_turtle.fillcolor("green")</code></pre>
+screen.title("Моя черепаха") # изменить название заголовка окна
+my_turtle.shape("turtle") # изменить форму черепахи
+my_turtle.fillcolor("green") # изменить цвет черепахи</code></pre>
 
 <h2>Задания</h2>
 <p><pre>Измените приведенный выше код, чтобы дорисовать квадрат.
@@ -111,6 +107,7 @@ my_turtle.fillcolor("green")</code></pre>
 Вы можете использовать градиентные цвета для неба.
 
 Нарисуйте простой дом с квадратным основанием, треугольной крышей и прямоугольной дверью.
+
 Нарисуйте простую форму кошки с головой, ушами, телом и хвостом.
 
 18/10/2023
