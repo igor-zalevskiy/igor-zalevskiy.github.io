@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link href="style/prism.css" rel="stylesheet">
+        <link href="style/dark-theme.css" rel="stylesheet">
+        <script src="style/prism.js"></script>
+
+    </head>
+    <body
+        data-prismjs-copy="Скопировать"
+	    data-prismjs-copy-error="Нажмите Ctrl+C, чтобы скопировать"
+	    data-prismjs-copy-success="Скопировано!">
+
+        <h1>Функции</h1>
+        <p>def -- return -- метод -- аргумент -- f-string -- абстракция</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PK_yguLapgA?si=YdYb_a8QNVsQdS2r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h2>Абстракция</h2>
+        <p>Абстракция (в информатике и программировании) - это обобщение. Уменьшение сложности проблемы.</p>
+        <img src="https://cdn.france-xenon.com/67872-product_main_zoom/2x-led-lighting-cranksets-and-feet-to-s60-ii.jpg" alt="Различные составные автомобиля" style="width: 400px; height: 300px;">
+        <h2>Структура</h2>
+        <pre class="language-python"><code># Импорт необходимых модулей
+import module1
+import module2
+
+# Создание (define) функции
+def main():
+    """
+    Главная функция.
+    С неё начинается программа.
+    Содержит логику программы.
+    """
+    # Основной код
+    ...
+
+
+def helper_function(arg1, arg2):
+    """
+    Вспомогательная функция, чтобы разбить основную логику на более мелкие части.
+    """
+    # Код вспомогательной функции
+    ...
+
+
+# Запуск функции main()
+# Эта конструкция гарантирует, что main() запустится только, если скрипт запускается напрямую (а не при импорте)
+if __name__ == "__main__":
+    main()
+</code></pre>
+
+
+    <h2>Пример</h2>
+        <pre class="language-python"><code>def main():
+    # Запросить у пользователя длину и ширину прямоугольника.
+    length = int(input("Введите длину: "))
+    width = int(input("Введите ширину: "))
+
+    # Вызов функции
+    rectangle_area = calculate_area(length, width)
+
+    # Напечать результат
+    print(f"Площадь треугольника с длиной {length} и шириной {width} равна {rectangle_area}.")
+
+
+# Создание функции для вычисления площади прямоугольника
+def calculate_area(length, width):
+    """
+    Функция, которая берет два аргумента: длину и ширину прямоугольника и возвращает его площадь.
+    """
+    area = length * width
+    return area
+
+
+if __name__ == "__main__":
+    main()
+</code></pre>
+
+<h2>Задания</h2>
+<p><pre><i>При выполнении заданий используйте структуру из примеров выше</i>
+
+
+    Создайте функцию, которая берёт два числа в качестве аргументов и возвращает их сумму.
+
+    Создайте функцию, которая берёт два числа в качестве аргументов и возвращает их произведение.
+
+    Напишите функцию приветствия: берёт имя человека и возвращает приветственное сообщение, например «Привет, Артём!».
+
+    Напишите функцию, которая переворачивает заданную строку.
+
+</pre></p>
+
+    <h2>Ресурсы</h2>
+        <p>"Problem Solving with Algorithms and Data Structures Using Python" - Miller, Ranum (2011)</p>
+</html>
